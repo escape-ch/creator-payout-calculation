@@ -1,7 +1,7 @@
 [workspace]
 channels = ["conda-forge"]
-name = "creator_payout"
-platforms = ["osx-arm64"]
+name = "creator_payout_calculation"
+platforms = ["osx-arm64", "linux-64"]
 version = "0.1.0"
 
 [dependencies]

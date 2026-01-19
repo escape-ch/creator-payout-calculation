@@ -18,7 +18,6 @@ WORKDIR /app
 
 ## copy project files
 COPY pixi.toml pixi.lock ./
-COPY ./src ./
 
 ## changing the working directory to the notebook location
 WORKDIR /app
@@ -26,14 +25,16 @@ WORKDIR /app
 ## installing pixi env
 RUN pixi install --locked
 
+COPY ./src ./
+
 ## entries
-ENTRYPOINT [
-    "pixi",
-    "run",
-    "papermill",
-    "quality_volume_payout.ipynb",
-    "output.ipynb",
-    "--log-output"
+ENTRYPOINT [ \
+    "pixi", \
+    "run", \
+    "papermill", \
+    "quality_volume_payout.ipynb", \
+    "output.ipynb", \
+    "--log-output" \
 ]
 
 CMD []
