@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Pixi environments
+.pixi/
+
+# Jupyter notebook checkpoints (all directories)
+**/.ipynb_checkpoints/
+
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+
+
+# csv files
+*.csv
+
+.env*
