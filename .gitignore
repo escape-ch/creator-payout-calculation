@@ -19,3 +19,7 @@ __pycache__/
 *.csv
 
 .env*
+
+.DS_Store
+.idea
+.code
