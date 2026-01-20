@@ -1,0 +1,5 @@
+.env*
+.pixi
+.git
+.helm
+.git*

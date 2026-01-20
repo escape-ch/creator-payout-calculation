@@ -1,23 +1,22 @@
 [workspace]
+name = "creator-payout-calculation"
 channels = ["conda-forge"]
-name = "creator_payout_calculation"
-platforms = ["osx-arm64", "linux-64"]
-version = "0.1.0"
+platforms = ["osx-arm64", "linux-64", "linux-aarch64"]
 
 [dependencies]
 python = "3.11.*"
-numpy = "1.26.4.*"
-scipy = "1.11.4.*"
-scikit-learn = "1.5.0.*"
+numpy = "1.26.*"
+scipy = "1.11.*"
+scikit-learn = "1.5.*"
 pandas = "2.1.1.*"
-matplotlib = "3.7.2.*"
-seaborn = "0.12.2.*"
-jupyterlab = "4.2.2.*"
-psycopg2 = "2.9.11.*"
-sqlalchemy = "2.0.45.*"
-python-dotenv="1.2.1.*"
-ipykernel = "*"
-papermill = "*"
+matplotlib = "3.7.*"
+seaborn = "0.12.*"
+jupyterlab = "4.2.*"
+psycopg2 = "2.9.*"
+sqlalchemy = "2.0.*"
+python-dotenv="1.2.*"
+ipykernel = "7.1.*"
+papermill = "2.6.*"
 
 [pypi-dependencies]
 jupyterlab-vim = "*"

@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     ca-certificates \
     git \
-    && rm -rf /var/lib/apt/lists/* 
+    && rm -rf /var/lib/apt/lists/*
 
 # set pixi home
 ENV PIXI_HOME=/opt/pixi
@@ -23,7 +23,7 @@ COPY pixi.toml pixi.lock ./
 WORKDIR /app
 
 ## installing pixi env
-RUN pixi install --locked
+RUN pixi install --locked && rm -rf ~/.cache/rattler
 
 COPY ./src ./
 

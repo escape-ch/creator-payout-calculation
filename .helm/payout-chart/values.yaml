@@ -1,0 +1,19 @@
+image: "python:3.11-slim"
+imagePullSecret: ""
+
+timeZone: "Etc/UTC"
+schedule: "30 0 * * *"
+
+args: []
+
+config:
+  filename: app-config.yaml
+#  content: |
+#    app:
+#      name: demo
+#      retries: 3
+
+# Env vars declared as a simple map (exact shape you asked for)
+env: {}
+#  ENV_VAR_1: "value1"
+#  ENV_VAR_2: "value2"
