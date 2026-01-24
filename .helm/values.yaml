@@ -11,16 +11,16 @@ config:
   filename: app-config.yaml
   content: |
     APP_ID: 1
+    CAMPAIGN_ID: 1
     TIME_WINDOW: 30d
     FREQ: D
     TARGET_COUNTRY: United_States
     VIEWS_THRESHOLD: 100
     
-    DIMINISHING_RETURNS: 0.9
-    
+    PAYOUT_UPLIFTING_PERC: 0.15
+  
     DEFAULT_RPM: 2
     PROCEEDS_PERCENTAGE_FOR_ATTRIBUTION: 0.8
-    ASSUMED_ROI: 3
     RPM_CAP: 4
 
 # Env vars declared as a simple map (exact shape you asked for)
