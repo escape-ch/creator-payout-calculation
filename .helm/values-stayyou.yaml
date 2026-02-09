@@ -1,0 +1,30 @@
+imagePullSecret: "regcred"
+
+timeZone: "Etc/UTC"
+schedule: "30 0 * * *"
+
+# papermill arg pointing to config file
+args:
+  - "--parameters_file=/config/app-config.yaml"
+
+config:
+  filename: app-config.yaml
+  content: |
+    APP_ID: 2
+    CAMPAIGN_ID: "4,5"
+    TIME_WINDOW: 7d
+    FREQ: D
+    TARGET_COUNTRY: United_States
+    VIEWS_THRESHOLD: 100
+    
+    PAYOUT_UPLIFTING_PERC: 0.15
+  
+    DEFAULT_RPM: 2
+    PROCEEDS_PERCENTAGE_FOR_ATTRIBUTION: 0.8
+    RPM_CAP: 4
+    TARGET_ROI: 3.0
+
+# Env vars declared as a simple map (exact shape you asked for)
+env: {}
+#  ENV_VAR_1: "value1"
+#  ENV_VAR_2: "value2"

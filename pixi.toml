@@ -17,6 +17,7 @@ sqlalchemy = "2.0.*"
 python-dotenv="1.2.*"
 ipykernel = "7.1.*"
 papermill = "2.6.*"
+requests = "2.32.*"
 
 [pypi-dependencies]
 jupyterlab-vim = "*"
