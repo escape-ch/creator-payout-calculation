@@ -4,10 +4,12 @@ set -o allexport
 source ../.env
 set +o allexport
 
-IMAGE_HASH="v1.0.2" # using database for tiktok accounts
+IMAGE_HASH="v1.0.3" # using database for tiktok accounts
 
 # to get docker password on aws console:
 # aws ecr get-login-password --region eu-central-1
+
+AWS_DOCKER_PASSWORD=$(aws ecr get-login-password --region eu-central-1 --profile escape)
 
 # Login to AWS ECR
 echo "$AWS_DOCKER_PASSWORD" | docker login --username AWS --password-stdin 431136220667.dkr.ecr.eu-central-1.amazonaws.com
