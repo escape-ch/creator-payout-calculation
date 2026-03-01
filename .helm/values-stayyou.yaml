@@ -11,8 +11,8 @@ config:
   filename: app-config.yaml
   content: |
     APP_ID: 2
-    CAMPAIGN_ID: "4,5"
-    TIME_WINDOW: 7d
+    CAMPAIGN_ID: "5"
+    TIME_WINDOW: 10d
     FREQ: D
     TARGET_COUNTRY: United_States
     VIEWS_THRESHOLD: 100
