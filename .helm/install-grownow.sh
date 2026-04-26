@@ -17,7 +17,7 @@ echo "$AWS_DOCKER_PASSWORD" | docker login --username AWS --password-stdin 43113
 
 # Build the Docker image
 echo "Building Docker image with hash: $IMAGE_HASH"
-#docker buildx build --platform=linux/amd64 -t 431136220667.dkr.ecr.eu-central-1.amazonaws.com/escape/creator-payout-calculation-grownow:$IMAGE_HASH --push -f ../.Dockerfile.grownow ../
+docker buildx build --platform=linux/amd64 -t 431136220667.dkr.ecr.eu-central-1.amazonaws.com/escape/creator-payout-calculation-grownow:$IMAGE_HASH --push -f ../.Dockerfile.grownow ../
 
 # to only push if previous step failed
 #docker push 431136220667.dkr.ecr.eu-central-1.amazonaws.com/escape/creator-payout-calculation-grownow:$IMAGE_HASH
